@@ -8,6 +8,7 @@ public class Ejercicio10 {
 
         int numeroGenerado = (int) (Math.random()*100);
         int numeroIngresado = -10;
+        int contador++;
 
        while (numeroIngresado != numeroGenerado){
             contador++;
