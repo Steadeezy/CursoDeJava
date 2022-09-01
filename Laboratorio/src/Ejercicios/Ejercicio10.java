@@ -9,19 +9,17 @@ public class Ejercicio10 {
         int numeroGenerado = (int) (Math.random()*100);
         int numeroIngresado = -10;
 
-        while (numeroIngresado != numeroGenerado){
+       while (numeroIngresado != numeroGenerado){
             numeroIngresado = Integer.parseInt(JOptionPane.showInputDialog("ingrese el número para comparar"));
             if(numeroIngresado>numeroGenerado){
                 JOptionPane.showMessageDialog(null,"El número que ingresó es mayor al generado");
+                contador++;
             } else if(numeroIngresado<numeroGenerado){
                 JOptionPane.showMessageDialog(null,"El número que ingresó es menor al generado");
+                contador++;
             }   else if(numeroIngresado==numeroGenerado){
-                JOptionPane.showMessageDialog(null,"El número ingresado es correcto");
+                JOptionPane.showMessageDialog(null,"El número ingresado es correcto \nLa cantidad de intentos fue: "+contador+"\nEl número correcto era: "+numeroIngresado);
             }
         }
-
-
-
     }
-
 }
